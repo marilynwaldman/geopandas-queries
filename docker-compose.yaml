@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  gs1:
+      build: .
+      image: jjpan/geopandastest
+      container_name: conda01
+      volumes:
+        - /home/geopandatest:/app/data
+        - /home/geopandatest/greetings.txt:/app/data/greetings.txt
+#        - C:\geopandatest:/app/data
+#        - C:\geopandatest/greetings.txt:/app/data/greetings.txt
